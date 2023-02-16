@@ -16,5 +16,9 @@ services:
       - DOCKER_TLS_VERIFY=1
     restart: on-failure
   
+volumes:
+  jenkins-data:
+  jenkins-docker-certs:
+
 networks:
   jenkins-network: 
