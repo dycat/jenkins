@@ -17,4 +17,4 @@ services:
     restart: on-failure
   
   networks:
-   - jenkins-network
+   jenkins-network: {}
