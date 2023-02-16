@@ -3,7 +3,7 @@ services:
   jenkins:
     build: .
     networks:
-      - jenkins
+      - jenkins-network
     ports:
       - "4000:8080"
       - "50000:50000"
@@ -15,3 +15,6 @@ services:
       - DOCKER_CERT_PATH=/certs/client 
       - DOCKER_TLS_VERIFY=1
     restart: on-failure
+  
+  networks:
+   - jenkins-network
