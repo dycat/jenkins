@@ -16,5 +16,5 @@ services:
       - DOCKER_TLS_VERIFY=1
     restart: on-failure
   
-  networks:
-   jenkins-network: 
+networks:
+  jenkins-network: 
