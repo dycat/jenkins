@@ -2,7 +2,7 @@ FROM jenkins/jenkins:2.375.3
 USER root
 RUN apt-get update && apt-get install -y lsb-release make sudo
 RUN groupadd docker
-RUN useradd jenkins && usermod -aG docker jenkins
+RUN usermod -aG docker jenkins
 RUN curl -fsSLo /usr/share/keyrings/docker-archive-keyring.asc \
   https://download.docker.com/linux/debian/gpg
 RUN echo "deb [arch=$(dpkg --print-architecture) \
