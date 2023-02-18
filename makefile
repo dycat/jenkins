@@ -1,4 +1,5 @@
 
+# The steps to make docker run as regular user
 init:
 	sudo groupadd docker
 	sudo usermod -aG docker ${USER}
